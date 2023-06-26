@@ -20,28 +20,28 @@ This simplified calculator adds the entire number selected, rather then adds dig
 
 ## Instructions
 ### Task 1: Project Set Up
-* [ ] Create a forked copy of this project.
-* [ ] Clone your OWN version of the repository in your terminal
-* [ ] cd into the project base directory `cd web-module-project-reducer-pattern`
-* [ ] Download project dependencies by running `npm install`
-* [ ] Start up the app using `npm start`
+* [x] Create a forked copy of this project.
+* [x] Clone your OWN version of the repository in your terminal
+* [x] cd into the project base directory `cd web-module-project-reducer-pattern`
+* [x] Download project dependencies by running `npm install`
+* [x] Start up the app using `npm start`
 
 ### Task 2: Project Requirements
 #### Connect The Reducer
 > *Let's start our process by connecting our UI to our reducer and initial state.*
-* [ ] Take a tour of application, in particular the `App.js`, `/reducer/index.js`, and `/action/index.js` files.
-* [ ] Note that the `TotalDisplay` component takes in a value and displays it in a styled textarea. YOU WILL NOT NEED TO MODIFY THIS COMPONENT.
-* [ ] Note that the `CalcButton` component takes in an `onClick` method and a value, displays that value and attaches the passed `onClick` method to the button ui. YOU WILL NOT NEED TO MODIFY THIS COMPONENT.
-* [ ] Within App.js, import the useReducer hook, our application's reducer and initialState object.
-* [ ] Use useReducer hook to get access to the application state and the dispatch function.
+* [x] Take a tour of application, in particular the `App.js`, `/reducer/index.js`, and `/action/index.js` files.
+* [x] Note that the `TotalDisplay` component takes in a value and displays it in a styled textarea. YOU WILL NOT NEED TO MODIFY THIS COMPONENT.
+* [x] Note that the `CalcButton` component takes in an `onClick` method and a value, displays that value and attaches the passed `onClick` method to the button ui. YOU WILL NOT NEED TO MODIFY THIS COMPONENT.
+* [x] Within App.js, import the useReducer hook, our application's reducer and initialState object.
+* [x] Use useReducer hook to get access to the application state and the dispatch function.
 
 #### Display our state within the UI.
 > *We now have access to the state within our App component (You can even test this using console.log or your React dev tools). Let's render the state as is on our screen.*
-* [ ] Replace "X" with a reference to `state.operation` within the operation element.
-* [ ] Replace "0" with a reference to `state.memory` within the memory element.
-* [ ] Replace "0" with a reference to `state.total` when passing a value to our TotalDisplay component.
-* [ ] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
-* [ ] **Test** that you are connected to state by changing the initialState value in your reducer to:
+* [x] Replace "X" with a reference to `state.operation` within the operation element.
+* [x] Replace "0" with a reference to `state.memory` within the memory element.
+* [x] Replace "0" with a reference to `state.total` when passing a value to our TotalDisplay component.
+* [x] Check to see that your total, operation and memory display in the UI match your initialState (100, * and 100 respectively)
+* [x] **Test** that you are connected to state by changing the initialState value in your reducer to:
 ```
 export const initialState = {
     total: 0,
@@ -49,11 +49,11 @@ export const initialState = {
     memory: 0
 }
 ```
-* [ ] Check to see that your display correctly reflects the change to your state.
+* [x] Check to see that your display correctly reflects the change to your state.
 
 #### Connect a premade action.
 > *Now that we can see our state, let's change allow the user to change it. Let's start with a simple premade action...adding one to our total.*
-* [ ] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
+* [x] Note the `ADD_ONE` action case (in ./reducer/index.js) and `addOne` action creator (in ./actions/index.js). This action adds 1 to our total.
 * [ ] Import the `addOne` action creator into App.js.
 * [ ] Within `App.js`, create an event handler connected to the 1 button's `onClick` method.
 * [ ] Within your event handler, dispatch the `addOne` action creator.
