@@ -11,12 +11,11 @@ import CalcButton from './CalcButton';
 function App() {
 
   const [state, dispatch] = useReducer(reducer, initialState);
-  
-  // console log
+
   // console.log(state);
   // console.log(dispatch);
   // const handleNumberClick = (number) => {
-  // dispatch(applyNumber(number));
+  //   dispatch(applyNumber(number));
   // }
   const handleNumberClick = (number) => {
     dispatch(applyNumber(number));
@@ -31,6 +30,7 @@ function App() {
   }
 
   const handleMemoryAdd = () => {
+    // alert('dispt')
     dispatch(addMemory());
   }
 
